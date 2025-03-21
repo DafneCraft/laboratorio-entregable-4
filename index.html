@@ -5,42 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="description" content="150 caracteres.">
+    <link rel="stylesheet" href="layout.css">
 </head>
-<body>
+<body class="">
     <header>
-        <h1>Titulo de la Pagina</h1>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Sobre Mi</a>
-            <a href="">Blog</a>
-            <a href="">Precios</a>
-            <a href="">F.A.Q</a>
-            <a href="">Contacto</a>
+        <div class="logo">
+            <img src="images/Logo Tomorado Fondo Blanco-min.png" alt="Logo del sitio web">
+        </div>
+        <nav class="menu-container">
+            <div class="menu-icon" id="menu-icon">
+                ☰
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sobre Mi</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Precios</a></li>
+                <li><a href="">F.A.Q</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h1>Pagina Principal</h1>
         <section>
-            <h2>Inicio</h2>
+            <picture>
+                <source srcset="images/catbig.jpg" media="(min-width: 1024px)"> 
+                <source srcset="images/catmedia.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+                <img src="images/cat-book-small.jpg" alt="Imagen de un gato acostado sobre un libro.">
+            </picture>
+        </section>
+        <section>
+            <h2>RESUMENES A TU MEDIDA</h2>
+            <button>HAZ TU PEDIDO</button>
         </section>
         <section>
             <h2>Sobre Mi</h2>
+            <picture class="image-about-container">
+                <img src="images/yo.jpg" alt="Imagen del autor del sitio web.">
+            </picture>
+            <p> 
+                ¡Hola, soy David! Desde niño, los libros han sido mi ventana a mundos infinitos de posibilidades. Mi pasión por la lectura no solo me inspira, sino que también me impulsa a compartir esas aventuras contigo. ¡Descubramos juntos la magia de las páginas! 📚✨
+            </p>
+            <button>APRENDE MAS</button>
         </section>
         <section>
             <h2>Blog</h2>
+            <p>Si quieres saber sobre otros libros leido por mi persona puede vistar mi blog.</p>
+            <button>VISITAR BLOG</button>
         </section>
         <section>
             <h2>Precios</h2>
+            <div class="carrusel">
+                <div class="slides">
+                    <div class="slide">
+                        <h3>Información 1</h3>
+                        <p>Este es el primer bloque de información.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Información 2</h3>
+                        <p>Este es el segundo bloque de información.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Información 3</h3>
+                        <p>Este es el tercer bloque de información.</p>
+                    </div>
+                </div>
+                <button class="prev">Anterior</button>
+                <button class="next">Siguiente</button>
+            </div>
         </section>
         <section>
             <h2>F.A.Q</h2>
+            <p>Si tienes preguntas puedes saber mas.</p>
+            <button>FAQ'S</button>
         </section>
         <section>
             <h2>Contacto</h2>
+            <form action="">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="description">Descripcion</label>
+                <textarea name="description" id="description" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
-        <h2>Final de Pagina</h2>
+        <div>
+            <h3>Redes sociales</h3>
+        </div>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sobre Mi</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Precios</a></li>
+                <li><a href="">F.A.Q</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Copyright © 2025 Todos los derechos reservados - Titulo de la pagina</p>
     </footer>
+    <script src="layout.js"></script>
 </body>
 </html>
