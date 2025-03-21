@@ -6,13 +6,14 @@
     <title>Document</title>
     <meta name="description" content="150 caracteres.">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="">
+<body>
     <header>
         <div class="logo">
             <img src="images/Logo Tomorado Fondo Blanco-min.png" alt="Logo del sitio web">
         </div>
-        <nav class="menu-container">
+        <nav class="menu-container-top">
             <div class="menu-icon" id="menu-icon">
                 ☰
             </div>
@@ -27,80 +28,90 @@
         </nav>
     </header>
     <main>
-        <section>
-            <picture>
-                <source srcset="images/catbig.jpg" media="(min-width: 1024px)"> 
-                <source srcset="images/catmedia.jpg" media="(min-width: 768px) and (max-width: 1023px)">
-                <img src="images/cat-book-small.jpg" alt="Imagen de un gato acostado sobre un libro.">
-            </picture>
-        </section>
-        <section>
+        <picture class="section0">
+            <source srcset="images/catbig.jpg" media="(min-width: 1024px)"> 
+            <source srcset="images/catmedia.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="images/CatSmall.jpg" media="(max-width: 767px)">
+            <img src="images/cat-book-small.jpg" alt="Imagen de un gato acostado sobre un libro.">
+        </picture>
+        <section class="section1">
             <h2>RESUMENES A TU MEDIDA</h2>
-            <button>HAZ TU PEDIDO</button>
+            <button class="buttons-home">HAZ TU PEDIDO</button>
         </section>
-        <section>
-            <h2>Sobre Mi</h2>
-            <picture class="image-about-container">
-                <img src="images/yo.jpg" alt="Imagen del autor del sitio web.">
+        <section class="section2">
+            <picture>
+                <img src="images/booklove.jpg" alt="Libro con paginas en forma de corazon">
             </picture>
-            <p> 
-                ¡Hola, soy David! Desde niño, los libros han sido mi ventana a mundos infinitos de posibilidades. Mi pasión por la lectura no solo me inspira, sino que también me impulsa a compartir esas aventuras contigo. ¡Descubramos juntos la magia de las páginas! 📚✨
-            </p>
-            <button>APRENDE MAS</button>
+            <div class="section2-text">
+                <h2>Sobre Mi</h2>
+                <p> 
+                    ¡Hola, soy David! Desde niño, los libros han sido mi ventana a mundos infinitos de posibilidades. Mi pasión por la lectura no solo me inspira, sino que también me impulsa a compartir esas aventuras contigo. ¡Descubramos juntos la magia de las páginas! 📚✨
+                </p>
+            </div>
+            <button class="buttons-home">APRENDE MAS</button>
         </section>
-        <section>
-            <h2>Blog</h2>
-            <p>Si quieres saber sobre otros libros leido por mi persona puede vistar mi blog.</p>
-            <button>VISITAR BLOG</button>
+        <section class="section3">
+            <div class="section3-text">
+                <h2>Blog</h2>
+                <p>Si quieres saber sobre otros libros leido y resumidos por mi puedes vistar mi blog.</p>
+            </div>
+            <button class="buttons-home">VISITAR BLOG</button>
         </section>
-        <section>
+        <section class="section4">
             <h2>Precios</h2>
             <div class="carrusel">
                 <div class="slides">
                     <div class="slide">
-                        <h3>Información 1</h3>
-                        <p>Este es el primer bloque de información.</p>
+                        <h3>Resumen de un Libro</h3>
+                        <p>$10</p>
+                        <p>Un libro puede ser resumido, la entrega del resumen se entrega en una semana, dependiendo del libro la entrega puede ser mas inmediata.</p>
                     </div>
                     <div class="slide">
-                        <h3>Información 2</h3>
-                        <p>Este es el segundo bloque de información.</p>
+                        <h3>Resumen de Varios Libros</h3>
+                        <p>$8/Libro</p>
+                        <p>Si se pide varios libros, se puede concertar el tiempo de entrega con un minimo de una semana de entrega.</p>
                     </div>
                     <div class="slide">
-                        <h3>Información 3</h3>
-                        <p>Este es el tercer bloque de información.</p>
+                        <h3>Resumen de Libro Personalizado</h3>
+                        <p>Hablar</p>
+                        <p>Si busca personalizacion en los resumenes y añadir mas cosas para la entrega, se puede acordar el precio.</p>
                     </div>
                 </div>
-                <button class="prev">Anterior</button>
-                <button class="next">Siguiente</button>
+                <button class="prev"> < </button>
+                <button class="next"> > </button>
             </div>
         </section>
-        <section>
-            <h2>F.A.Q</h2>
-            <p>Si tienes preguntas puedes saber mas.</p>
-            <button>FAQ'S</button>
+        <section class="section5">
+            <div class="section5-text">
+                <h2>F.A.Q</h2>
+                <p>Si tienes preguntas puedes saber mas.</p>
+            </div>
+            <button class="buttons-home">FAQ'S</button>
         </section>
-        <section>
+        <section class="section6">
             <h2>Contacto</h2>
             <form action="">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
 
-                <label for="email">Correo Electronico</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
 
-                <label for="description">Descripcion</label>
-                <textarea name="description" id="description" rows="4"></textarea>
+                <textarea name="description" id="description" rows="4" placeholder="Deja un Mensaje"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button class="buttons-home" type="submit">Enviar</button>
             </form>
         </section>
     </main>
     <footer>
-        <div>
-            <h3>Redes sociales</h3>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
-        <nav>
-            <ul class="menu" id="menu">
+        <nav class="menu-container-bottom">
+            <ul class="menu-list-bottom">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Sobre Mi</a></li>
                 <li><a href="">Blog</a></li>
@@ -109,7 +120,7 @@
                 <li><a href="">Contacto</a></li>
             </ul>
         </nav>
-        <p>Copyright © 2025 Todos los derechos reservados - Titulo de la pagina</p>
+        <p>Copyright © 2025 Todos los derechos reservados - Tomorado</p>
     </footer>
     <script src="layout.js"></script>
 </body>
