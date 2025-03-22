@@ -18,12 +18,12 @@
                 ☰
             </div>
             <ul class="menu" id="menu">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre Mi</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Precios</a></li>
-                <li><a href="">F.A.Q</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#faq">F.A.Q</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -37,9 +37,11 @@
             </picture>
             <section class="section1" id="section1">
                 <h2>RESUMENES A TU MEDIDA</h2>
-                <button class="buttons-home" onclick="">HAZ TU PEDIDO</button>
+                <a href="#contacto">
+                    <button class="buttons-home" onclick="">HAZ TU PEDIDO</button>
+                </a>
             </section>
-            <section class="section2" id="section2">
+            <section class="section2" id="sobre-mi">
                 <div class="section2-container">
                     <picture>
                         <img src="images/booklove.jpg" alt="Libro con paginas en forma de corazon">
@@ -51,16 +53,18 @@
                         </p>
                     </div>
                 </div>
-                <button class="buttons-home">APRENDE MAS</button>
+                <button class="buttons-home" onclick="alert('Aun seguimos trabajando en ello 👷‍♂️😅')">APRENDE MAS</button>
             </section>
-            <section class="section3" id="section3">
+            <section class="section3" id="blog">
                 <div class="section3-text">
                     <h2>Blog</h2>
                     <p>Si quieres saber sobre otros libros leido y resumidos por mi puedes vistar mi blog.</p>
                 </div>
-                <button class="buttons-home">VISITAR BLOG</button>
+                <a href="https://tomoradoblog.blogspot.com/" target="_blank">
+                    <button class="buttons-home">VISITAR BLOG</button>
+                </a>
             </section>
-            <section class="section4" id="section4">
+            <section class="section4" id="precios">
                 <h2>Precios</h2>
                 <div class="carrusel">
                     <div class="slides">
@@ -84,16 +88,16 @@
                     <button class="next"> > </button>
                 </div>
             </section>
-            <section class="section5" id="section5">
+            <section class="section5" id="faq">
                 <div class="section5-text">
                     <h2>F.A.Q</h2>
                     <p>Si tienes preguntas puedes saber mas.</p>
                 </div>
-                <button class="buttons-home">FAQ'S</button>
+                <button class="buttons-home" onclick="alert('Aun seguimos trabajando en ello 👷‍♂️😅')">FAQ'S</button>
             </section>
-            <section class="section6" id="section6">
+            <section class="section6" id="contacto">
                 <h2>Contacto</h2>
-                <form action="">
+                <form action="mailto:ytshai7@gmail.com" method="POST" enctype="text/plain">
                     <input type="text" id="name" name="name" placeholder="Nombre" required>
     
                     <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
@@ -106,21 +110,21 @@
         </main>
         <footer>
             <div class="social-media">
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook" onclick="alert('Le gusta tener privacidad 🕵️‍♂️. Sin embargo tu puedes ver tu red social 😃')">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram" onclick="alert('Le gusta tener privacidad 🕵️‍♂️. Sin embargo tu puedes ver tu red social 😃')">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
             <nav class="menu-container-bottom">
                 <ul class="menu-list-bottom">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Sobre Mi</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Precios</a></li>
-                    <li><a href="">F.A.Q</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mi</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#faq">F.A.Q</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
             <p>Copyright © 2025 Todos los derechos reservados - Tomorado</p>
