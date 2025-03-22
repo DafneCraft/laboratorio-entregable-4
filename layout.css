@@ -96,18 +96,22 @@ header {
     color: #2E2E2E;
 }
 
-.section2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+.section2{
     max-width: 1200px;
     margin: 0 auto;
     background-color: #F5F5F5;
     padding: 30px;
 }
 
-.section2 img {
+
+.section2-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.section2-container img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -170,7 +174,7 @@ header {
 .slide {
     min-width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     font-size: larger;
 }
@@ -181,9 +185,15 @@ header {
     color: #2E2E2E;
 }
 
-.slide p {
+.section4-price {
+    font-size: 30px;
+    color: #2E2E2E;
+}
+
+.section4-text {
     margin: 0;
     font-size: 16px;
+    margin-top: 20px;
     color: #2E2E2E;
 }
 
@@ -218,6 +228,7 @@ header {
     background-color: #A8DADC;
     padding: 30px;
     font-size: larger;
+    color: #2E2E2E;
 }
 
 .section5-text {
@@ -245,10 +256,16 @@ header {
     resize: none;
 }
 
-section6 h2 {
-    font-size: larger;
-}
-
+.section6 input[type="text"],
+    .section6 input[type="email"],
+    .section6 textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    }
 
 footer {
     background-color: #6E4A7E;
@@ -306,9 +323,46 @@ footer {
 
 /*Version Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    body {
-        background-color: rgb(21, 109, 192);
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
+
+    main {
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .menu a {
+        color: #f5f5f5;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .section2-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+        align-items: center; /* Alinea los elementos en la parte superior */
+        gap: 30px; /* Espacio entre los elementos */
+        padding: 20px;
+    }
+    
+    .section2-container picture{
+        flex: 1; /* La imagen ocupa una parte del espacio disponible */
+        max-width: 75%; /* Limita el ancho de la imagen */
+    }
+
+    
+    .section2-text {
+        flex: 1; /* El texto ocupa una parte del espacio disponible */
+        max-width: 100%; /* Limita el ancho del texto */
+    }
+
+    
+
 }
 
 /*Version Movil*/
@@ -362,9 +416,11 @@ footer {
         transform: translateY(0);
     }
 
-    .section2 {
+    .section2-container {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
+        padding: 10px;
     }
 
     .carrusel {
@@ -384,14 +440,4 @@ footer {
         font-size: 16px;
     }
 
-    .section6 input[type="text"],
-    .section6 input[type="email"],
-    .section6 textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    }
 }
