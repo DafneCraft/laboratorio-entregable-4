@@ -317,8 +317,81 @@ footer {
 /*Version Computador*/
 @media screen and (min-width: 1024px){
     body {
-        background-color: rgb(255, 217, 0);
+        display: grid;
+        grid-template-columns: 250px 1fr; /* Columna izquierda fija y columna derecha flexible */
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
     }
+      
+    header {
+        position: sticky; /* Fija el header en la parte izquierda */
+        top: 0; /* Lo mantiene en la parte superior */
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+        box-sizing: border-box; /* Incluye el padding en la altura */
+        display: flex;
+        flex-direction: column; /* Organiza los elementos en columna */
+        justify-content: center; /* Centra los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .menu-container-top {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        display: flex;
+        justify-content: center; /* Centra el menú horizontalmente */
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column; /* Menú vertical */
+        align-items: center; /* Centra los elementos del menú */
+        text-align: center;
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espacio entre elementos del menú */
+    }
+    
+    .menu a {
+        color: #F5F5F5;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .content {
+        overflow-y: auto; /* Habilita el scroll vertical si el contenido excede la altura */
+    }
+    
+    main {
+        overflow-y: auto; /* Habilita el scroll vertical si el contenido excede la altura */
+        text-align: center;
+    }
+
+    .section2-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+        align-items: center; /* Alinea los elementos en la parte superior */
+        gap: 30px; /* Espacio entre los elementos */
+        padding: 20px;
+    }
+    
+    .section2-container picture{
+        flex: 1; /* La imagen ocupa una parte del espacio disponible */
+        max-width: 75%; /* Limita el ancho de la imagen */
+    }
+
+    
+    .section2-text {
+        flex: 1; /* El texto ocupa una parte del espacio disponible */
+        max-width: 100%; /* Limita el ancho del texto */
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background-color: #8A5A9B;
+    }
+    
 }
 
 /*Version Tablet*/
